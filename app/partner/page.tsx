@@ -13,8 +13,8 @@ export default function PartnerPage() {
                 {/* Intro */}
                 <div className="max-w-4xl mx-auto text-center mb-20 animate-in fade-in slide-in-from-bottom-4 duration-700">
                     <span className="text-blue-500 font-medium tracking-wider text-sm uppercase mb-3 block">{content.partner.header.badge}</span>
-                    <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">{content.partner.header.title}</h1>
-                    <p className="text-lg md:text-xl text-slate-600 leading-relaxed">
+                    <h1 className="text-3xl md:text-5xl font-semibold text-slate-900 mb-6">{content.partner.header.title}</h1>
+                    <p className="text-base md:text-lg text-slate-600 leading-relaxed font-medium">
                         {content.partner.header.description}
                     </p>
                 </div>
@@ -24,8 +24,8 @@ export default function PartnerPage() {
                     {content.partner.steps.map((step, i) => (
                         <div key={i} className="bg-white p-8 rounded-xl border border-slate-200 shadow-sm hover:border-blue-300 hover:shadow-md transition-all group">
                             <div className="text-4xl font-bold text-slate-100 mb-4 group-hover:text-blue-50 transition-colors">0{i + 1}</div>
-                            <h3 className="text-xl font-bold text-slate-900 mb-2">{step.title}</h3>
-                            <p className="text-slate-600 text-sm leading-relaxed">{step.desc}</p>
+                            <h3 className="text-lg font-semibold text-slate-900 mb-2">{step.title}</h3>
+                            <p className="text-slate-600 text-sm leading-relaxed font-medium">{step.desc}</p>
                         </div>
                     ))}
                 </div>
@@ -36,8 +36,8 @@ export default function PartnerPage() {
                         <div className="h-2 bg-blue-600 w-full"></div>
                         <CardContent className="p-8 md:p-10">
                             <div className="text-center mb-8">
-                                <h2 className="text-2xl font-bold text-slate-900 mb-2">{content.partner.form.title}</h2>
-                                <p className="text-slate-500">{content.partner.form.subtitle}</p>
+                                <h2 className="text-2xl font-semibold text-slate-900 mb-2">{content.partner.form.title}</h2>
+                                <p className="text-slate-500 font-medium">{content.partner.form.subtitle}</p>
                             </div>
 
                             <form className="space-y-6">

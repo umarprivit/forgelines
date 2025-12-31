@@ -28,16 +28,16 @@ export default function Home() {
           <div className="inline-block mb-4 px-3 py-1 md:px-4 md:py-1.5 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-400 text-xs md:text-sm font-medium backdrop-blur-sm">
             {content.home.hero.badge}
           </div>
-          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-slate-900 mb-6 tracking-tight">
-            {content.home.hero.title.split("Search")[0]} <br className="hidden md:block" />
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-semibold text-slate-900 mb-6 tracking-tight">
+            {content.home.hero.title.split("Search")[0]} <br className="hidden md:block " />
             {/* Note: I'm hardcoding the break for now based on the JSON string logic or just rendering it as text. 
                 Wait, JSON has "Connecting Manufacturers to Asia & Middle East". The split approach is brittle. 
                 I'll just render it directly. If user wants line break, I might need to allow HTML or just let it wrap. 
                 Let's use the JSON string. */
             }
-            {content.home.hero.title}
+            {/* {content.home.hero.title} */}
           </h1>
-          <p className="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed">
+          <p className="text-base md:text-lg text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed font-medium">
             {content.home.hero.description}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center px-4 sm:px-0">
@@ -56,13 +56,13 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
+              <h2 className="text-2xl md:text-3xl font-semibold text-slate-900 mb-6">
                 {/* This was hardcoded 'Your Direct Link to <br /> Global OEMs' - JSON has 'Your Direct Link to Global OEMs'
                      I will just use the JSON title. Handling the <br> dynamically is tricky with simple JSON. 
                      I'll stick to simple text for now to match the "user editable" requirement simply. */
                   content.home.what_we_do.title}
               </h2>
-              <p className="text-slate-600 text-lg mb-8 leading-relaxed">
+              <p className="text-slate-600 text-base mb-8 leading-relaxed font-medium">
                 {content.home.what_we_do.description}
               </p>
 
@@ -70,7 +70,7 @@ export default function Home() {
                 {content.home.what_we_do.list.map((item, i) => (
                   <div key={i} className="flex items-center gap-3">
                     <CheckCircle2 className="text-green-500 w-5 h-5 flex-shrink-0" />
-                    <span className="text-slate-700">{item}</span>
+                    <span className="text-slate-700 font-medium">{item}</span>
                   </div>
                 ))}
               </div>
@@ -101,8 +101,8 @@ export default function Home() {
                       }
                       {[Globe2, Zap, Layers, CheckCircle2][i] && React.createElement([Globe2, Zap, Layers, CheckCircle2][i], { className: "w-8 h-8 text-blue-600" })}
                     </div>
-                    <h3 className="text-xl font-bold text-slate-900 mb-3">{feature.title}</h3>
-                    <p className="text-slate-600">{feature.desc}</p>
+                    <h3 className="text-lg font-semibold text-slate-900 mb-3">{feature.title}</h3>
+                    <p className="text-slate-600 text-sm font-medium">{feature.desc}</p>
                   </Card>
                 ))}
               </CardSwap>
@@ -114,13 +114,13 @@ export default function Home() {
       {/* Regions Covered */}
       <section className="py-20 bg-slate-50 border-y border-slate-200">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-slate-900 mb-4">{content.home.regions.title}</h2>
-          <p className="text-slate-600 max-w-2xl mx-auto mb-10">
+          <h2 className="text-2xl md:text-3xl font-semibold text-slate-900 mb-4">{content.home.regions.title}</h2>
+          <p className="text-slate-600 max-w-2xl mx-auto mb-10 text-base font-medium">
             {content.home.regions.description}
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             {content.home.regions.list.map((region) => (
-              <span key={region} className="px-6 py-2 rounded-md bg-slate-100 border border-slate-200 text-slate-700 text-sm backdrop-blur-sm shadow-sm">
+              <span key={region} className="px-6 py-2 rounded-md bg-slate-100 border border-slate-200 text-slate-700 text-sm font-medium backdrop-blur-sm shadow-sm">
                 {region}
               </span>
             ))}
@@ -134,8 +134,8 @@ export default function Home() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">{content.home.rfq.title}</h2>
-              <p className="text-slate-600">
+              <h2 className="text-2xl md:text-3xl font-semibold text-slate-900 mb-4">{content.home.rfq.title}</h2>
+              <p className="text-slate-600 font-medium">
                 {content.home.rfq.description}
               </p>
             </div>
@@ -191,8 +191,8 @@ export default function Home() {
       {/* CTA */}
       <section className="py-20 bg-slate-100 border-t border-slate-200">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-2xl font-bold text-slate-900 mb-6">{content.home.manufacturer_cta.title}</h2>
-          <p className="text-slate-600 mb-8 max-w-xl mx-auto">
+          <h2 className="text-xl md:text-2xl font-semibold text-slate-900 mb-6">{content.home.manufacturer_cta.title}</h2>
+          <p className="text-slate-600 mb-8 max-w-xl mx-auto font-medium">
             {content.home.manufacturer_cta.description}
           </p>
           <Button asChild size="lg" variant="outline">

@@ -1,9 +1,13 @@
 import type { Metadata } from "next";
-import { Outfit } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/shared/navbar";
 
-const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit" });
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-poppins"
+});
 
 export const metadata: Metadata = {
   title: "ForgeLines | Global Manufacturing Representatives",
@@ -19,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${outfit.variable} font-sans antialiased bg-background text-foreground min-h-screen flex flex-col overflow-x-hidden`}>
+      <body className={`${poppins.variable} font-sans antialiased bg-background text-foreground min-h-screen flex flex-col overflow-x-hidden`}>
         <Navbar />
         <main className="flex-grow pt-16 md:pt-20">
           {children}
