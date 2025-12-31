@@ -10,6 +10,8 @@ export const metadata: Metadata = {
   description: "Authorized Regional Sales Representatives for Asia & Middle East. Connecting global manufacturers with buyers.",
 };
 
+import content from "@/lib/content.json";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -24,7 +26,7 @@ export default function RootLayout({
         </main>
         <footer className="py-8 bg-slate-50 border-t border-slate-200 text-center text-sm text-slate-500">
           <div className="container mx-auto px-4">
-            <p>&copy; {new Date().getFullYear()} ForgeLines. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} {content.layout.footer.rights}</p>
           </div>
         </footer>
       </body>

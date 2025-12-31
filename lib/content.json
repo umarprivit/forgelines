@@ -1,0 +1,226 @@
+{
+    "layout": {
+        "navbar": {
+            "links": [
+                {
+                    "name": "Home",
+                    "href": "/"
+                },
+                {
+                    "name": "About",
+                    "href": "/about"
+                },
+                {
+                    "name": "Contact",
+                    "href": "/contact"
+                }
+            ],
+            "cta": "For Manufacturers"
+        },
+        "footer": {
+            "rights": "ForgeLines. All rights reserved."
+        }
+    },
+    "home": {
+        "hero": {
+            "badge": "Authorized Regional Sales Representatives",
+            "title": "Connecting Manufacturers to Asia & Middle East",
+            "description": "We support global manufacturers by handling RFQs, quotes, and sales coordination for buyers across Asian and Middle Eastern markets.",
+            "cta_primary": "Request a Quote",
+            "cta_secondary": "Learn More"
+        },
+        "what_we_do": {
+            "title": "Your Direct Link to Global OEMs",
+            "description": "ForgeLines represents global manufacturers as their regional sales partner. We manage buyer inquiries, coordinate quotations with manufacturers, support communication, and ensure professional transactions.",
+            "list": [
+                "Represent manufacturers directly",
+                "Manage buyer inquiries & RFQs",
+                "Coordinate accurate quotations",
+                "Buyers purchase directly from OEM"
+            ],
+            "learn_more": "See how our model works →"
+        },
+        "features": [
+            {
+                "title": "Global Reach",
+                "desc": "Bridge between East & West. Connecting markets."
+            },
+            {
+                "title": "Fast Quotes",
+                "desc": "Direct coordination handling for instant pricing."
+            },
+            {
+                "title": "Regional Focus",
+                "desc": "Deep expertise in Asian & ME markets."
+            },
+            {
+                "title": "Transparency",
+                "desc": "Clear communication. Direct OEM payment."
+            }
+        ],
+        "regions": {
+            "title": "Regions Covered",
+            "description": "We support buyers and manufacturers across Asia and the Middle East, including South Asia, Southeast Asia, East Asia, GCC, and broader Middle Eastern markets.",
+            "list": [
+                "South Asia",
+                "Southeast Asia",
+                "East Asia",
+                "GCC",
+                "Middle East"
+            ]
+        },
+        "rfq": {
+            "title": "Submit Your RFQ",
+            "description": "If you are a buyer in Asia or the Middle East, please share your requirements below. We will coordinate with the relevant manufacturer and respond accordingly."
+        },
+        "manufacturer_cta": {
+            "title": "Are you a Manufacturer?",
+            "description": "Join our network and expand your reach in Asian and Middle Eastern markets without the overhead.",
+            "button": "Partner With Us →"
+        }
+    },
+    "about": {
+        "header": {
+            "badge": "About Us",
+            "title": "Who We Are",
+            "description": "ForgeLines is a representative company that helps global manufacturers establish and grow their presence in Asia and the Middle East."
+        },
+        "bridging_gap": {
+            "title": "Bridging the Gap",
+            "p1": "We act as an authorized regional point of contact, ensuring clear communication and professional handling of inquiries from buyers in these regions.",
+            "p2": "Our role is to support both sides by making the process smooth, accurate, and responsive. We coordinate RFQs, quotations, clarifications, and buyer communication on behalf of manufacturers."
+        },
+        "model_works": {
+            "title": "How the Representative Model Works",
+            "steps": [
+                "Manufacturers list ForgeLines as regional rep.",
+                "Buyers contact us directly or via referral.",
+                "We coordinate quotes with the manufacturer.",
+                "PO is forwarded to manufacturer.",
+                "Buyers pay the manufacturer directly.",
+                "Manufacturer ships directly to buyer."
+            ]
+        },
+        "manufacturer_reasons": {
+            "title": "Why Manufacturers Choose ForgeLines",
+            "subtitle": "Expanding your reach with zero risk.",
+            "items": [
+                {
+                    "title": "No Upfront Cost",
+                    "description": "We operate on a commission model. You only pay when we succeed."
+                },
+                {
+                    "title": "Time-Zone Aligned",
+                    "description": "We work in the same time zones as the buyers, ensuring rapid responses."
+                },
+                {
+                    "title": "Structured RFQ Handling",
+                    "description": "We filter and qualify inquiries so your team deals with serious buyers."
+                },
+                {
+                    "title": "Market Familiarity",
+                    "description": "Deep understanding of cultural and business nuances in Asia & ME."
+                },
+                {
+                    "title": "Reduced Workload",
+                    "description": "We act as your extended sales arm, reducing burden on internal teams."
+                }
+            ]
+        },
+        "buyer_reasons": {
+            "title": "Why Buyers Choose ForgeLines",
+            "subtitle": "Simplifying procurement from global brands.",
+            "items": [
+                {
+                    "title": "Faster Responses",
+                    "description": "Local presence means we respond within your business hours."
+                },
+                {
+                    "title": "Clear Communication",
+                    "description": "We bridge the language and technical gaps effectively."
+                },
+                {
+                    "title": "Global Access",
+                    "description": "Easy access to world-class OEMs without navigation hurdles."
+                },
+                {
+                    "title": "Single Point of Contact",
+                    "description": "One reliable contact for multiple global manufacturers."
+                }
+            ]
+        }
+    },
+    "contact": {
+        "header": {
+            "badge": "Get In Touch",
+            "title": "Contact Us",
+            "description": "For general inquiries, partnership discussions, or support. We are here to help you connect with global opportunities."
+        },
+        "info": {
+            "title": "Contact Information",
+            "email_label": "Email",
+            "email": "contact@forgelines.com",
+            "phone_label": "Phone",
+            "phone": "Available upon request",
+            "hq_label": "Headquarters",
+            "hq": "Global Operations\nServing Asia & Middle East Only"
+        },
+        "form": {
+            "title": "Send us a Message",
+            "labels": {
+                "name": "Name",
+                "email": "Email",
+                "company": "Company",
+                "message": "Message"
+            },
+            "button": "Send Message"
+        }
+    },
+    "partner": {
+        "header": {
+            "badge": "For Manufacturers",
+            "title": "Expand Your Reach",
+            "description": "ForgeLines enables manufacturers to enter or expand in Asian and Middle Eastern markets without additional overhead. We act as your regional sales representative, managing inquiries, quotations, and communication."
+        },
+        "steps": [
+            {
+                "title": "Representation Agreement",
+                "desc": "You authorize ForgeLines as your regional representative."
+            },
+            {
+                "title": "Buyer Communication",
+                "desc": "We handle inquiries and RFQs from Asia & Middle East."
+            },
+            {
+                "title": "Quotation Coordination",
+                "desc": "We gather requirements and coordinate quotes with your team."
+            },
+            {
+                "title": "PO Coordination",
+                "desc": "We forward Purchase Orders directly to you."
+            },
+            {
+                "title": "Direct Transaction",
+                "desc": "You invoice and ship to the buyer directly."
+            },
+            {
+                "title": "Commission Settlement",
+                "desc": "We receive a commission only after successful transactions."
+            }
+        ],
+        "form": {
+            "title": "Partner With Us",
+            "subtitle": "Submit your interest to join our manufacturing network.",
+            "labels": {
+                "company": "Company Name",
+                "country": "Country",
+                "contact": "Contact Person",
+                "email": "Email",
+                "website": "Website",
+                "product": "Product Category / Line",
+                "message": "Message"
+            },
+            "button": "Submit Interest"
+        }
+    }
+}

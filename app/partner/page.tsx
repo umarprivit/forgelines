@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
+import content from "@/lib/content.json";
 
 export default function PartnerPage() {
     return (
@@ -11,24 +12,16 @@ export default function PartnerPage() {
 
                 {/* Intro */}
                 <div className="max-w-4xl mx-auto text-center mb-20 animate-in fade-in slide-in-from-bottom-4 duration-700">
-                    <span className="text-blue-500 font-medium tracking-wider text-sm uppercase mb-3 block">For Manufacturers</span>
-                    <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">Expand Your Reach</h1>
+                    <span className="text-blue-500 font-medium tracking-wider text-sm uppercase mb-3 block">{content.partner.header.badge}</span>
+                    <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">{content.partner.header.title}</h1>
                     <p className="text-lg md:text-xl text-slate-600 leading-relaxed">
-                        ForgeLines enables manufacturers to enter or expand in Asian and Middle Eastern markets without additional overhead.
-                        We act as your regional sales representative, managing inquiries, quotations, and communication.
+                        {content.partner.header.description}
                     </p>
                 </div>
 
                 {/* Process Steps */}
                 <div className="grid md:grid-cols-3 gap-8 mb-24">
-                    {[
-                        { title: "Representation Agreement", desc: "You authorize ForgeLines as your regional representative." },
-                        { title: "Buyer Communication", desc: "We handle inquiries and RFQs from Asia & Middle East." },
-                        { title: "Quotation Coordination", desc: "We gather requirements and coordinate quotes with your team." },
-                        { title: "PO Coordination", desc: "We forward Purchase Orders directly to you." },
-                        { title: "Direct Transaction", desc: "You invoice and ship to the buyer directly." },
-                        { title: "Commission Settlement", desc: "We receive a commission only after successful transactions." }
-                    ].map((step, i) => (
+                    {content.partner.steps.map((step, i) => (
                         <div key={i} className="bg-white p-8 rounded-xl border border-slate-200 shadow-sm hover:border-blue-300 hover:shadow-md transition-all group">
                             <div className="text-4xl font-bold text-slate-100 mb-4 group-hover:text-blue-50 transition-colors">0{i + 1}</div>
                             <h3 className="text-xl font-bold text-slate-900 mb-2">{step.title}</h3>
@@ -43,50 +36,50 @@ export default function PartnerPage() {
                         <div className="h-2 bg-blue-600 w-full"></div>
                         <CardContent className="p-8 md:p-10">
                             <div className="text-center mb-8">
-                                <h2 className="text-2xl font-bold text-slate-900 mb-2">Partner With Us</h2>
-                                <p className="text-slate-500">Submit your interest to join our manufacturing network.</p>
+                                <h2 className="text-2xl font-bold text-slate-900 mb-2">{content.partner.form.title}</h2>
+                                <p className="text-slate-500">{content.partner.form.subtitle}</p>
                             </div>
 
                             <form className="space-y-6">
                                 <div className="grid md:grid-cols-2 gap-6">
                                     <div className="space-y-2">
-                                        <Label htmlFor="company">Company Name</Label>
+                                        <Label htmlFor="company">{content.partner.form.labels.company}</Label>
                                         <Input id="company" className="bg-slate-50 border-slate-200 focus:bg-white transition-colors" />
                                     </div>
                                     <div className="space-y-2">
-                                        <Label htmlFor="country">Country</Label>
+                                        <Label htmlFor="country">{content.partner.form.labels.country}</Label>
                                         <Input id="country" className="bg-slate-50 border-slate-200 focus:bg-white transition-colors" />
                                     </div>
                                 </div>
 
                                 <div className="grid md:grid-cols-2 gap-6">
                                     <div className="space-y-2">
-                                        <Label htmlFor="contact">Contact Person</Label>
+                                        <Label htmlFor="contact">{content.partner.form.labels.contact}</Label>
                                         <Input id="contact" className="bg-slate-50 border-slate-200 focus:bg-white transition-colors" />
                                     </div>
                                     <div className="space-y-2">
-                                        <Label htmlFor="email">Email</Label>
+                                        <Label htmlFor="email">{content.partner.form.labels.email}</Label>
                                         <Input id="email" type="email" className="bg-slate-50 border-slate-200 focus:bg-white transition-colors" />
                                     </div>
                                 </div>
 
                                 <div className="space-y-2">
-                                    <Label htmlFor="website">Website</Label>
+                                    <Label htmlFor="website">{content.partner.form.labels.website}</Label>
                                     <Input id="website" placeholder="https://" className="bg-slate-50 border-slate-200 focus:bg-white transition-colors" />
                                 </div>
 
                                 <div className="space-y-2">
-                                    <Label htmlFor="product">Product Category / Line</Label>
+                                    <Label htmlFor="product">{content.partner.form.labels.product}</Label>
                                     <Input id="product" className="bg-slate-50 border-slate-200 focus:bg-white transition-colors" />
                                 </div>
 
                                 <div className="space-y-2">
-                                    <Label htmlFor="message">Message</Label>
+                                    <Label htmlFor="message">{content.partner.form.labels.message}</Label>
                                     <Textarea id="message" className="bg-slate-50 border-slate-200 focus:bg-white transition-colors min-h-[120px]" />
                                 </div>
 
                                 <Button type="submit" size="lg" className="w-full bg-blue-600 hover:bg-blue-700 shadow-[0_0_20px_rgba(37,99,235,0.2)]">
-                                    Submit Interest
+                                    {content.partner.form.button}
                                 </Button>
                             </form>
                         </CardContent>

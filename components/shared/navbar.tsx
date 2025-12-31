@@ -7,11 +7,10 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 
-const navLinks = [
-  { name: "Home", href: "/" },
-  { name: "About", href: "/about" },
-  { name: "Contact", href: "/contact" },
-];
+
+import content from "@/lib/content.json";
+
+const navLinks = content.layout.navbar.links;
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -39,8 +38,7 @@ export function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <span className="text-xl font-bold tracking-tight text-slate-900">
-              ForgeLines
-            </span>
+              <p>&copy; {new Date().getFullYear()} {content.layout.footer.rights}</p></span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -59,7 +57,7 @@ export function Navbar() {
           {/* CTA & Mobile Toggle */}
           <div className="flex items-center gap-4">
             <Button className="hidden md:inline-flex" size="sm" asChild>
-              <Link href="/partner">For Manufacturers</Link>
+              <Link href="/partner">{content.layout.navbar.cta}</Link>
             </Button>
 
             {/* Mobile Menu Toggle */}
@@ -121,7 +119,7 @@ export function Navbar() {
 
                 <div className="mt-auto pt-8 border-t border-slate-100">
                   <Button className="w-full" size="lg" asChild>
-                    <Link href="/partner">For Manufacturers</Link>
+                    <Link href="/partner">{content.layout.navbar.cta}</Link>
                   </Button>
                 </div>
               </div>
